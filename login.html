@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <nav class="navbar bg-slate-500 text-white w-full h-[60px] py-[20px] px-10 flex items-center justify-between">
+        <a href="#home" class="navbar-left  text-white decoration-transparent font-semibold">Authentication Form</a>
+        <a href="./index.html" class="navbar-right  text-white decoration-transparent font-semibold">Signup</a>
+    </nav>
+
+    <header class="header py-[15px] px-[40px] bg-white text-left border-b-2 border-b-[#ddd] text-[#333]">
+        <h1 class="m-0 text-[2rem] font-extrabold"> Login</h1>
+    </header>
+
+    <main class="container flex items-center justify-center flex-col m-auto w-[90%] bg-white p-[20px] rounded-[8px] text-center">
+        <form class="w-full m-0">
+            <input class="w-full p-[10px] mb-[15px] border-[1px] border-[#ddd] rounded-[5px] text-[14px]" type="email" id="email" name="email" placeholder="Email" required>
+            <input class="w-full p-[10px] mb-[15px] border-[1px] border-[#ddd] rounded-[5px] text-[14px]" type="password" id="password" name="password" placeholder="Password" required>
+            <button id="signIn" class="w-[60%] text-white bg-slate-500 p-[10px] border-none rounded-[5px] text-[14px] font-bold cursor-pointer" type="submit">Login</button>
+        </form>
+    </main>
+  <script type="module" src="./firebaseConfig.js"></script>  
+</body>
+</html>
